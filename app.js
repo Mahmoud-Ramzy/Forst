@@ -24,4 +24,64 @@ window.addEventListener("scroll",function(){
     else{
         btn.style.display="block";
     }
-})
+});
+const about=document.getElementById("about");
+const porto=document.getElementById("Portfolio");
+const contact=document.getElementById("Contact");
+
+
+document.addEventListener('scroll', viweportSection);
+//function see if the section is in the view port then make it active.  
+function viweportSection(){
+    if(isElementInViewport(about)){
+        document.querySelector("article").style.left="0";
+        document.querySelector("figure").style.right="0";
+        console.log("1 in vp")
+        return;
+    }else if(isElementInViewport(porto)){
+        document.querySelector(".proto1").style.left="0";
+        document.querySelector(".proto2").style.bottom="0";
+        document.querySelector(".proto3").style.right="0";
+        console.log("2 in vp")
+        return;
+    }
+    else if(isElementInViewport(contact)){
+        document.querySelector(".contact-me").style.bottom="0";
+        console.log("3 in vp")
+        return;
+    }
+}
+
+//function check if the element in viewport or not.
+/*
+function isInViewport(el,num) {
+    const element = el.getBoundingClientRect();
+    console.log(`Top = ${element.top}`)
+    console.log(`Height = ${el.clientHeight}`)
+    if(num===1){
+        return (
+            element.top >= -(el.clientHeight-70) &&
+            element.top <= (el.clientHeight-70) 
+        );
+    }
+    else if(num===2 || num===3){
+        return (
+            element.top >= -(el.clientHeight) &&
+            element.top <= (el.clientHeight) 
+        );
+    }
+}*/
+function isElementInViewport (el) {
+
+    // Special bonus for those using jQuery
+    if (typeof jQuery === "function" && el instanceof jQuery) {
+        el = el[0];
+    }
+
+    var rect = el.getBoundingClientRect();
+
+    return (
+        rect.top >= 0 &&
+        rect.bottom <= (window.innerHeight+100 || document.documentElement.clientHeight) /* or $(window).height() */
+        );
+}

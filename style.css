@@ -125,6 +125,16 @@ z-index: 50;
     padding: 100px 70px;
     height: 80vh;
 }
+.about article{
+    transition: 0.7s;
+    left: -1500px;
+    position: relative;
+}
+.about figure{
+    transition: 0.7s;
+    right: -1500px;
+    position: relative;
+}
 
 .about p{
     font-size: 1em;
@@ -230,6 +240,7 @@ z-index: 50;
 }
 .portfolio{
     padding: 100px 30px;
+    overflow: hidden;
 }
 .proto-container{
     display: grid;
@@ -252,7 +263,7 @@ z-index: 50;
 }
 
 .card-container{
-    position: relative;;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -317,6 +328,7 @@ figcaption:nth-of-type(2){
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow:hidden;
 }
 .menu{
     display: none;
@@ -339,3 +351,24 @@ footer{
     }
 }
 /* End responsive */
+.proto1,.proto2,.proto3{
+    transition: 0.7s;
+}
+.proto1{
+    left: -1000px;
+}
+.proto2{
+bottom: -1000px;
+}
+.proto3{
+    right: -1000px;
+}
+.contact-me{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    bottom: -1500px;
+    transition: 0.8s;
+}

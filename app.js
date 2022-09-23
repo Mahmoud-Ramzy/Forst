@@ -8,6 +8,7 @@ let btn=document.getElementById("btn");
 let header=document.querySelector("header");
 window.addEventListener("scroll",function(){
     let y =window.scrollY;
+    /*
     let width=this.window.innerWidth;
     if (y<480){
         text.style.top=50 + (-0.23*y)+"%"
@@ -43,9 +44,9 @@ window.addEventListener("scroll",function(){
         viweportSectionSmall(y,330, 920, 1550, 2050, 2850);
     }
 
-    console.log(y)
     // console.log(width)
     */
+   console.log(y)
 });
 const about=document.getElementById("about");
 const porto=document.getElementById("Portfolio");
@@ -58,9 +59,9 @@ ScrollReveal({
     delay:400
 });
 
-ScrollReveal().reveal('.me-article, .proto1', { delay: 100, origin: 'left' });
-ScrollReveal().reveal('.proto2, .contact-me', { delay: 100, origin: 'bottom' });
-ScrollReveal().reveal('.proto3, .me-img', { delay: 100, origin: 'right' });
+ScrollReveal().reveal('.me-article, .proto1, .proto3', { delay: 100, origin: 'left' });
+ScrollReveal().reveal(' .contact-me', { delay: 100, origin: 'bottom' });
+ScrollReveal().reveal('.proto2, .me-img', { delay: 100, origin: 'right' });
 
 
 

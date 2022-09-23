@@ -12,6 +12,9 @@ let header=document.querySelector("header");
 let details = navigator.userAgent;
 let regexp = /android|iphone|kindle|ipad/i;
 let isMobileDevice = regexp.test(details);
+if(isMobileDevice){
+    text.style.top=35+"%"
+}
 
 window.addEventListener("scroll",function(){
     let y =window.scrollY;

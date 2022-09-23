@@ -126,13 +126,13 @@ z-index: 50;
     height: 80vh;
 }
 .about article{
-    transition: 0.7s;
-    left: -1500px;
+    /* transition: 0.7s; */
+    /* left: -1500px; */
     position: relative;
 }
 .about figure{
-    transition: 0.7s;
-    right: -1500px;
+    /* transition: 0.7s; */
+    /* right: -1500px; */
     position: relative;
 }
 
@@ -345,30 +345,12 @@ footer{
         display: block;
         width: 50px;
     }
-    
-    #bird1{
-        width: 80%;
-    }
 }
 /* End responsive */
-.proto1,.proto2,.proto3{
-    transition: 0.7s;
-}
-.proto1{
-    left: -1000px;
-}
-.proto2{
-bottom: -1000px;
-}
-.proto3{
-    right: -1000px;
-}
 .contact-me{
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    bottom: -1500px;
-    transition: 0.8s;
 }

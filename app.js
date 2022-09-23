@@ -13,7 +13,8 @@ let details = navigator.userAgent;
 let regexp = /android|iphone|kindle|ipad/i;
 let isMobileDevice = regexp.test(details);
 if(isMobileDevice){
-    text.style.top=35+"%"
+    text.style.top=30+"%"
+    text.style.fontSize=6+"em"
 }
 
 window.addEventListener("scroll",function(){

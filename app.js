@@ -38,7 +38,7 @@ window.addEventListener("scroll",function(){
 
 /*Start reveal*/
 ScrollReveal({
-    reset:true,
+    reset:false,
     distance:'3000px',
     duration:900,
     delay:400
